@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "args": ["--in-memory-testing"],
+            "cwd": "${workspaceFolder:dev-containers}",
+            "name": "Debug App",
+            "program": "${workspaceFolder:dev-containers}/.build/debug/App",
+            "preLaunchTask": "swift: Build Debug App"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:dev-containers}",
+            "name": "Release App",
+            "program": "${workspaceFolder:dev-containers}/.build/release/App",
+            "preLaunchTask": "swift: Build Release App"
+        }
+    ]
+}
