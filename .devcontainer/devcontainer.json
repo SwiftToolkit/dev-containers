@@ -1,6 +1,8 @@
 {
     "name": "Swift 6.0",
-    "image": "swift:6.0",
+    "dockerComposeFile": "docker-compose.yaml",
+	"service": "app",
+    "workspaceFolder": "/workspace",
     "customizations": {
         "vscode": {
             "extensions": [
@@ -11,5 +13,5 @@
             }
         }
     },
-    "forwardPorts": [8080]
+    "forwardPorts": [8080, 5432]
 }

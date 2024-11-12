@@ -3,19 +3,19 @@
         {
             "type": "lldb",
             "request": "launch",
-            "args": ["--in-memory-testing"],
-            "cwd": "${workspaceFolder:dev-containers}",
+            "args": [],
+            "cwd": "${workspaceFolder:workspace}",
             "name": "Debug App",
-            "program": "${workspaceFolder:dev-containers}/.build/debug/App",
+            "program": "${workspaceFolder:workspace}/.build/debug/App",
             "preLaunchTask": "swift: Build Debug App"
         },
         {
             "type": "lldb",
             "request": "launch",
             "args": [],
-            "cwd": "${workspaceFolder:dev-containers}",
+            "cwd": "${workspaceFolder:workspace}",
             "name": "Release App",
-            "program": "${workspaceFolder:dev-containers}/.build/release/App",
+            "program": "${workspaceFolder:workspace}/.build/release/App",
             "preLaunchTask": "swift: Build Release App"
         }
     ]

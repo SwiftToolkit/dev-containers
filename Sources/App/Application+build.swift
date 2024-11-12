@@ -43,8 +43,15 @@ public func buildApplication(_ arguments: some AppArguments) async throws -> som
     var postgresRepository: TodoPostgresRepository?
     let router: Router<AppRequestContext>
     if !arguments.inMemoryTesting {
+        let config = PostgresClient.Configuration(
+                host: environment.get("POSTGRES_HOST") ?? "localhost",
+                username: environment.get("POSTGRES_USER") ?? "todos",
+                password: environment.get("POSTGRES_PASSWORD") ?? "",
+                database: environment.get("POSTGRES_DB") ?? "todos",
+                tls: .disable
+            )
         let client = PostgresClient(
-            configuration: .init(host: "localhost", username: "todos", password: "todos", database: "hummingbird", tls: .disable),
+            configuration: config,
             backgroundLogger: logger
         )
         let repository = TodoPostgresRepository(client: client, logger: logger)
