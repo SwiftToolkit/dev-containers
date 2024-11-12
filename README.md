@@ -2,7 +2,7 @@
 
 Sample project for the series of articles about using Swift with Dev Containers in VS Code.
 
-* 1st Article: [Developing in Swift with VS Code Dev Containers](https://swifttoolkit.dev/posts/dev-containers-swift). To follow the post after cloning, check out the [**starter**](https://github.com/SwiftToolkit/dev-containers/tree/starter) branch.
+* 1st Article: [Developing in Swift with VS Code Dev Containers](https://swifttoolkit.dev/posts/dev-containers-swift). To follow the post after cloning, you can start from this branch, **starter**.
 
 * 2nd Article: [Using Postgres with Hummingbird in a Dev Container](https://swifttoolkit.dev/posts/dev-containers-postgres). To follow the post, start from the [**simple-container**](https://github.com/SwiftToolkit/dev-containers/tree/simple-container) branch.
 
